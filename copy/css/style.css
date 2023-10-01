@@ -1,0 +1,33 @@
+.noscroll{
+    height: 12.5rem;
+    overflow: auto;
+}
+.noscrollnav{
+    height: 100vh;
+    overflow: auto;
+}
+
+
+    .terminal-container {
+      background-color: #212121;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14px;
+      white-space: pre-wrap;
+    }
+    /* Customize the copy button styles */
+    .copy-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+    .copy-button:hover {
+      background-color: #0069d9;
+    }
+
+
+

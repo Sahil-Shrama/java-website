@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap starter</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontawsome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="/prelorder/Pelorder.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="/Search box/w3-CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+ 
+</head>
+  <body onload="myfunction()">
+    <!-- lorder -->
+
+    <div id="load">
+      <div id="loading-bg">
+        <div id="loading">
+          <span id="spone" class="sp"></span>
+          <span id="sptwo" class="sp"></span>
+          <span id="spthree" class="sp"></span>
+          <span id="spfour" class="sp"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- lorder over -->
+
+    <!-- navigation bar -->
+
+    <nav class="navbar  navbar-expand-lg fixed-top navbar-dark  bg-dark text-white">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="Images/logo.jpeg" alt="" width="150" height="37" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="fas fa-code"></i></span>
+        </button>
+        
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- <div class="d-flex" > -->
+          <ul class="navbar-nav text-bg-dark ms-auto">
+            <li class="nav-item d-none d-lg-flex">
+              <a class="nav-link" aria-current="page" href="#home"
+                ><i class="fas fa-code"></i
+              ></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#summary">Contact US</a>
+            </li>
+          </ul>
+
+          <span>
+            <span class="fa-stack" onclick="dropFunction()">
+              <a href="#">
+                <i class="text-primary fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-search fa-stack-1x text-white"></i>
+              </a>
+            </span>
+            <div
+              class="w3-dropdown-content w3-bar-block w3-card w3-light-grey noscroll"
+              id="myDIV"
+            >
+              <input
+                class="w3-input w3-padding"
+                type="text"
+                placeholder="Search.."
+                id="myInput"
+                onkeyup="filterFunction()"
+              />
+              <a class="w3-bar-item w3-button" href="#about">About</a>
+              <a class="w3-bar-item w3-button" href="#base">Base</a>
+              <a class="w3-bar-item w3-button" href="#blog">Blog</a>
+              <a class="w3-bar-item w3-button" href="#contact">Contact</a>
+              <a class="w3-bar-item w3-button" href="#custom">Custom</a>
+              <a class="w3-bar-item w3-button" href="#support">Support</a>
+              <a class="w3-bar-item w3-button" href="#tools">Tools</a>
+            </div>
+        </span>
+
+          <span class="nav-item p-2">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="text-primary fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x text-white"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+
+   <!-- body and slide bar -->
+<div class="py-2"></div>
+   <div class="row py-5 ">
+    <div class="d-none  noscrollnav  d-md-flex col-md-3 text-black ">
+     <div class="text-center text-capitalize w-100">
+      <h3 class="bg-primary p-2">Java</h3>
+      <a href="#" class="active nav-link pt-3 text text-decoration-none link-underline-opacity-100" >hello world</a>
+     </div>
+    </div>
+    
+
+    
+
+<!-- other side of code -->
+
+
+
+
+
+
+
+    <!-- terminal -->
+    <div class="col-md-9">
+      <div class="container-fluid my-5">
+        <div class="row justify-content-center">
+          <p><!-- Add the copy button -->
+            <div class="col-md-12">
+              <div class="terminal-container code-class">
+                <pre data-line="1-8, 10" data-start="31" class="language-java">
+                  <code class="language-java">
+                    
+/**
+* The Java3 class prompts the user to enter two numbers 
+* and then calculates and prints their product.
+*/
+import java.util.Scanner;
+
+public class Java3 {
+   public static void main(String[] args) {
+       Multiply obj = new Multiply();
+
+   }
+}
+
+class Multiply {
+
+  Multiply() {
+    Scanner foo = new Scanner(System.in);
+       System.out.println("Program to print multiply of number");
+
+       System.out.println("Enter first number");
+       int a = foo.nextInt();
+
+       System.out.println("Enter second number");
+       int b = foo.nextInt();
+       System.out.println("Product is " + a * b);
+
+   }
+
+}
+
+                  </code>
+                </pre>
+                
+              </div>
+            </div>
+          </div>
+          <button class="copy-button mt-2 ms-auto" data-clipboard-target=".terminal-container">Copy</button></p>
+        </div>
+    </div>
+</div>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+  <!-- Include the clipboard.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  
+  <script src="js/script.js"></script>
+  <script>
+    // Initialize Prism
+    Prism.highlightAll();
+
+    // Initialize Clipboard.js
+    new ClipboardJS('.copy-button');
+  </script>
+    
+  <script src="/prelorder/prelorder.js"></script>
+  <script src="/Search box/w3.js"></script>
+  </body>
+</html>

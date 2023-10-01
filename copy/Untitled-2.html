@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Terminal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include the Prism CSS -->
+  <style>
+    .terminal-container {
+      background-color: #212121;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14px;
+      white-space: pre-wrap;
+    }
+    /* Customize the copy button styles */
+    .copy-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+    .copy-button:hover {
+      background-color: #0069d9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid my-5">
+    <div class="row justify-content-center">
+      <p><!-- Add the copy button -->
+        <div class="col-md-12">
+          <div class="terminal-container">
+            <pre>
+              <code class="language-javascript">
+                // Code snippet example
+                const message = "Hello, World!";
+                console.log(message);
+              </code>
+            </pre>
+            
+          </div>
+        </div>
+      </div>
+      <button class="copy-button mt-2 ms-auto" data-clipboard-target=".terminal-container">Copy</button></p>
+    </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Include the Prism library -->
+   
+</body>
+
+</html>
