@@ -97,7 +97,7 @@
         <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
       <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
       <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
-      <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
+      <a href="index5.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
       <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
       <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
       <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
@@ -197,7 +197,7 @@
             <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
           <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
           <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
-          <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
+          <a href="index5.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
           <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
           <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
           <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
@@ -340,7 +340,7 @@
         <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
       <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
       <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
-      <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
+      <a href="index5.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
       <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
       <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
       <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
@@ -382,26 +382,29 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Average </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
-
-The code simply prints the message "hello world" when the program is executed.
+   
+ The code is a Java program that asks the user to input five numbers.
+ The program then calculates and prints the average of those five numbers.
+ The code starts by declaring variables for an input stream, which is used to read in data from the keyboard, and a variable for storing the output stream, which will print out what it has calculated.
+ It also declares two methods: one called "average" that takes no parameters and returns nothing; and another called "main" that takes no parameters but calls average() when it is run.
+ The code is an example of how to use a Scanner object.
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index4.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index6.html">
     Next
   </a>
   </button>
@@ -424,14 +427,39 @@ The code simply prints the message "hello world" when the program is executed.
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
                   
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+ * The Java4 class calculates and prints the average
+ *  of five numbers inputted by the user.
+ */
+import java.util.Scanner;
+
+public class Java5 {
+    public static void average(){
+    Scanner foo = new Scanner(System.in);
+    System.out.println("Input First number  ");
+    int a = foo.nextInt();
+    System.out.println("Input Second number  ");
+    int b = foo.nextInt();
+    System.out.println("Input third number  ");
+    int c = foo.nextInt();
+    System.out.println("Input Fourth number  ");
+    int d = foo.nextInt();
+    System.out.println("Input Fifth number  ");
+    int e = foo.nextInt();
+    System.out.println("Printing the average of five Numbers" );
+    double f = (double) + (a+b+c+d+e)/5 ;
+    System.out.print(" "+f);
+    System.out.println("");
+
+
+
+    }
+    public static void main(String[] args) {
+        average();
+    }
+
+
+}
                 
                   </code>
                 </pre>
@@ -448,10 +476,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index4.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index6.html">
           Next
         </a>
         </button>

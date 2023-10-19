@@ -98,7 +98,7 @@
       <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
       <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
       <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
-      <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
+      <a href="index6.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
       <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
       <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
       <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
@@ -198,7 +198,7 @@
           <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
           <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
           <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
-          <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
+          <a href="index6.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
           <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
           <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
           <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
@@ -341,7 +341,7 @@
       <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
       <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
       <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
-      <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
+      <a href="index6.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
       <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
       <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
       <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
@@ -382,26 +382,32 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Swap  </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
-
-The code simply prints the message "hello world" when the program is executed.
+    The code is a Java6 class that has two variables, a and b.
+    The main method of the class is called with an array of String objects as arguments.
+    Inside the main method, there is a new instance of this class called foo.
+    It then prints out "Two numbers before swaping 12 13" to show what values are in each variable before swapping them.
+    Then it prints out "after swaping 13 12".
+    After that, it creates an integer variable named temp and assigns its value to be equal to the value of foo's variable a.
+    Then it changes the value of foo's variable b from being equal to temp into being equal to its original value which was 13.
+    Finally, after changing all these values back again, it prints out "Two numbers before swaping 12 13".
+    The code will print: Two numbers before swaping 12 13 after swaping swapping
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index5.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index7.html">
     Next
   </a>
   </button>
@@ -423,15 +429,33 @@ The code simply prints the message "hello world" when the program is executed.
               <div class="terminal-container " >
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
-                  
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+    * The Java6 class swaps the values of two variables and prints the result.
+    */
+   public class Java6 {
+    int a= 12 ,b=13;
+   
+   
+   
+   public static void main(String[] args) {
+       Java6 foo = new Java6();
+       
+       
+       System.out.println("Two numbers before swaping " +foo.a+"  "+foo.b);
+       System.out.println("after swaping ");
+       
+       System.out.println("swaping");
+      
+       int temp;
+       temp = foo.a;
+       
+       foo.a= foo.b;
+       foo.b=temp;
+       System.out.println("Two numbers before swaping " +foo.a+"  "+foo.b);
+   
+   }    
+   }
+   
                 
                   </code>
                 </pre>
@@ -448,10 +472,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index5.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index7.html">
           Next
         </a>
         </button>

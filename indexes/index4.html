@@ -96,7 +96,7 @@
           
         <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
       <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
-      <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
+      <a href="index4.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
       <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
       <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
       <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
@@ -196,7 +196,7 @@
         
             <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
           <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
-          <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
+          <a href="index4.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
           <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
           <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
           <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
@@ -339,7 +339,7 @@
         
         <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
       <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
-      <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
+      <a href="index4.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
       <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
       <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
       <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
@@ -382,26 +382,31 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Airthametic operation </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
-
-The code simply prints the message "hello world" when the program is executed.
+    The code starts with a comment that says "Program to print operation in java".
+    This is followed by the declaration of an object called Scanner.
+    The next line declares a variable called foo which will be used as the input for this program.
+    The first line asks the user to enter their first number and then prints out what they entered on screen.
+    Next, it asks them to enter their second number and then prints out what they entered on screen again.
+    It also tells them that if they want multiplication, addition, or division, they should type "*", "+", or "/" respectively into the text field provided after the switch statement.
+    If you don't type anything in there, it will default back to printing whatever was typed before (the string s).
+    The code attempts to print the operation in java.
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index3.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index5.html">
     Next
   </a>
   </button>
@@ -423,15 +428,53 @@ The code simply prints the message "hello world" when the program is executed.
               <div class="terminal-container " >
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
-                  
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+    * The Java4 class takes two numbers and an operation as input from the user and performs the
+    * corresponding operation on the numbers.
+    */
+   import java.util.Scanner;
+   public class Java4 {
+       static void operation(){
+           System.out.println("Program to print operation in java ");
+           Scanner foo = new Scanner(System.in);
+   
+   
+           System.out.println("Enter the first number ");
+           int a =  foo.nextInt();
+           System.out.println("Enter the second number ");
+           int b =  foo.nextInt();
+            
+           System.out.println("Enter the operation you want * / + - ");
+           String s = foo.next();
+   
+           switch (s) {
+               case "*":
+                   System.out.println("multiplication is"+(a*b));
+                   break;
+               case "+":
+                   System.out.println("Addition  is"+(a+b));
+                   break;
+               case "/":
+                   System.out.println("devide is"+(a/b));
+                   break;
+               case "-":
+                   System.out.println("Subtraction is"+(a-b));
+                   break;
+           
+               default:
+               System.out.println("Enter correct value");
+                   break;
+           }
+   
+   
+       }
+       
+       public static void main(String[] args) {
+           operation();
+       }
+   }
+                 
+ 
                 
                   </code>
                 </pre>
@@ -448,10 +491,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index3.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index5.html">
           Next
         </a>
         </button>
@@ -635,5 +678,7 @@ function w3_close() {
   <script src="../Search box/w3.js"></script>
   </body>
 </html>
+
+
 
 

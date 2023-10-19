@@ -95,7 +95,7 @@
           <a href="index1.html" id="notactive" class="activenow nav-link py-2  text-decoration-none " >1. hello world</a>
           
         <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
-      <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
+      <a href="index3.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
       <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
       <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
       <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
@@ -338,7 +338,7 @@
         <a href="index1.html" id="notactive" class="activenow nav-link py-2  text-decoration-none " >1. hello world</a>
         
         <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
-      <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
+      <a href="index3.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
       <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
       <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
       <a href="index6.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >6. swap</a>
@@ -382,26 +382,39 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Take Two Number and print the product  </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
+   
 
-The code simply prints the message "hello world" when the program is executed.
+The code is a program that prints the product of two numbers.
+The code starts by creating an object called Multiply and initializing it with a constructor.
+Then, the code asks for input from the user on how to multiply two numbers.
+The user enters their first number into a variable called "a" and their second number into a variable called "b".
+After this, they print out what is happening in the program using System.out.println().
+The next line of code is where things get interesting because it uses Scanner to ask for input from the user again but this time asking them to enter their first number as well as their second number at once instead of separately like before.
+This way, when you run your program, you can just type in one command: int b = foo.nextInt(); and then hit enter without having to type anything else after that statement!
+The code attempts to be used in a Java program.
+It is the first code of a class named Multiply.
+The main method is called when the program starts, and it has one parameter: an array of String objects.
+The first line creates an instance of the class Multiply with its constructor, which takes no parameters.
+The second line uses a Scanner object to read from System.in, which represents input from the user on standard input (stdin).
+The third line prints out "Program to print multiply of number" followed by two empty lines for users to enter their numbers and press enter after each number they enter.
+After this, the fourth line prints out "Enter first number" followed by two empty lines for
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index4.html">
     Next
   </a>
   </button>
@@ -424,14 +437,36 @@ The code simply prints the message "hello world" when the program is executed.
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
                   
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+    * The Java3 class prompts the user to enter two numbers 
+    * and then calculates and prints their product.
+    */
+   import java.util.Scanner;
+   
+   public class Java3 {
+       public static void main(String[] args) {
+           Multiply obj = new Multiply();
+   
+       }
+   }
+   
+   class Multiply {
+   
+       Multiply() {
+           Scanner foo = new Scanner(System.in);
+           System.out.println("Program to print multiply of number");
+   
+           System.out.println("Enter first number");
+           int a = foo.nextInt();
+   
+           System.out.println("Enter second number");
+           int b = foo.nextInt();
+           System.out.println("Product is " + a * b);
+   
+       }
+   
+   }
+   
                 
                   </code>
                 </pre>
@@ -448,10 +483,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index4.html">
           Next
         </a>
         </button>

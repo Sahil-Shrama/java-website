@@ -104,7 +104,7 @@
       <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
       <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
       <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
-      <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
+      <a href="index12.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
       <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
       <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
       <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
@@ -204,7 +204,7 @@
           <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
           <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
           <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
-          <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
+          <a href="index12.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
           <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
           <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
           <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
@@ -347,7 +347,7 @@
       <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
       <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
       <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
-      <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
+      <a href="index12.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
       <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
       <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
       <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
@@ -382,26 +382,31 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Number of Character  </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
+    The code is a Java program that counts the number of characters, whitespace, and digits in a string.
+The code starts by declaring an array called "ch" which is initialized to be empty.
+Then it loops through each character in the string and increments the count for each letter or digit found in the string.
+The first if statement checks if there is any whitespace before checking whether or not there are any letters present.
+If so, then it increments the count for whitespace; otherwise, it increments the count for digits.
+After incrementing these two counters, they are printed out on screen using System.out's println method with appropriate values: "character 0 whitwspace 0 mumber 0".
+The code is a Java program that counts the number of characters, whitespace and digits in a string.
 
-The code simply prints the message "hello world" when the program is executed.
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index11.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index13.html">
     Next
   </a>
   </button>
@@ -423,15 +428,38 @@ The code simply prints the message "hello world" when the program is executed.
               <div class="terminal-container " >
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
-                  
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+    * The Java12 class takes a string as input and counts the number of characters, whitespace, and
+    * numbers in the string.
+    */
+   import java.util.Scanner;
+   public class Java12 {
+       public static void count(char[] st){
+           int charcter=0,whitespace = 0 ,number = 0;
+         for (int i = 0; i < st.length; i++) {
+           if(Character.isLetter(st[i])){
+               charcter++;
+           }
+           else if(Character.isWhitespace(st[i])){
+               whitespace++;
+           }
+           else if (Character.isDigit(st[i])){
+               number++;
+           }
+         }
+         System.out.println("character "+charcter+" whitwspace "+whitespace+" mumber "+number);
+       }
+   public static void main(String[] args) {
+       System.out.println("enter the value of string ");
+       Scanner foo = new Scanner(System.in);
+      String str = foo.nextLine();
+      char[] ch = str.toCharArray();
+      count(ch);
+   
+       
+   }    
+   }
+              
                 
                   </code>
                 </pre>
@@ -448,10 +476,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index11.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index13.html">
           Next
         </a>
         </button>

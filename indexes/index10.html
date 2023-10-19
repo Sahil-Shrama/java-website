@@ -102,7 +102,7 @@
       <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
       <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
       <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
-      <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
+      <a href="index10.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
       <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
       <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
       <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
@@ -202,7 +202,7 @@
           <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
           <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
           <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
-          <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
+          <a href="index10.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
           <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
           <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
           <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
@@ -345,7 +345,7 @@
       <a href="index7.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >7. decimal to binary</a>
       <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
       <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
-      <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
+      <a href="index10.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
       <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
       <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
       <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
@@ -382,26 +382,31 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Input Sum </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
-
-The code simply prints the message "hello world" when the program is executed.
+    The code begins by asking the user to enter a number whose digit sum is to be found.
+The code then creates a Scanner object called foo and uses it to read in an integer from the user.
+Next, x is set equal to the value of what was just read in from the user.
+Then, System.out prints "sum is" followed by an initial value for var which will be 0 until x becomes zero (var!=0).
+Next, while(var!=0) loops through 10 times with each iteration printing out digit as it's being calculated and adding that digit's value into sum along with its current position within var (x%10).
+Finally, after all 10 iterations have been completed, System.out prints out sum followed by a newline character so that we can see where we are now at in our looping process.
+The code iterates through an integer variable x and prints the sum of each digit in the string "sum is " followed by the value of var.
+The code above also uses a while loop to print out every digit from 0-9 until x is equal to 0.
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index9.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index11.html">
     Next
   </a>
   </button>
@@ -423,15 +428,37 @@ The code simply prints the message "hello world" when the program is executed.
               <div class="terminal-container " >
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
-                  
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+ * The java10 class takes a number as input and calculates the sum of its digits.
+ */
+import java.util.Scanner;
+public class java10 {
+    public static void main(String[] args) {
+       
+     System.out.println("enter the number whose digit sum to find");
+      Scanner foo = new Scanner(System.in);
+      int x= foo.nextInt();
+      System.out.print("sum is ");
+      int sum = 0;
+      int var = x;
+      while(var!=0)
+      {
+        int digit = var%10;
+         sum += digit;
+         var /=10;
+
+      }
+        
+
+
+        
+        System.out.println(sum);
+
+        
+
+    }
+    
+}
                 
                   </code>
                 </pre>
@@ -448,10 +475,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index9.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index11.html">
           Next
         </a>
         </button>

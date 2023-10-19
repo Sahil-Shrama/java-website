@@ -107,7 +107,7 @@
       <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
       <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
       <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
-      <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
+      <a href="index15.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
       <a href="index16.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >16. odd number 1-20</a>
       
       <a href="index17.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >17. even number 1-20</a>
@@ -207,7 +207,7 @@
           <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
           <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
           <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
-          <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
+          <a href="index15.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
           <a href="index16.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >16. odd number 1-20</a>
           
           <a href="index17.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >17. even number 1-20</a>
@@ -350,7 +350,7 @@
       <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
       <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
       <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
-      <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
+      <a href="index15.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
       <a href="index16.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >16. odd number 1-20</a>
       
       <a href="index17.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >17. even number 1-20</a>
@@ -382,26 +382,29 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Current date and time </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
-
-The code simply prints the message "hello world" when the program is executed.
+    The code is trying to print the date in a string.
+The code is using the class Date and then creating an instance of it with new.
+Then, it prints out the string representation of that object's value by calling its toString method.
+The main function creates a new Date object and assigns it to variable foo.
+It then uses String's constructor call x=foo.toString() which will create a String from the value of this newly created Date object, which is what we want to print on screen for debugging purposes.
+The code will print the following: Fri Jun 13 16:07:39 EDT 2017
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index14.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index16.html">
     Next
   </a>
   </button>
@@ -423,15 +426,18 @@ The code simply prints the message "hello world" when the program is executed.
               <div class="terminal-container " >
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
-                  
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+    * The java15 class prints the current date and time.
+    */
+   import java.util.Date;
+   public class java15 {
+       public static void main(String[] args) {
+           Date foo = new Date();
+           String x=foo.toString();
+           System.out.println(x);
+           
+       }
+   }          
                 
                   </code>
                 </pre>
@@ -448,10 +454,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index14.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index16.html">
           Next
         </a>
         </button>

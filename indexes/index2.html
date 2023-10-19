@@ -92,9 +92,9 @@
    
      <div class="mt-3">  
    
-          <a href="index1.html" id="notactive" class="activenow nav-link py-2  text-decoration-none " >1. hello world</a>
+          <a href="index1.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >1. hello world</a>
           
-        <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
+        <a href="index2.html" id="activenow" class="activenow nav-link py-2  text-decoration-none">2. sum of two number</a>
       <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
       <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
       <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
@@ -192,9 +192,9 @@
               id="myInput"
               onkeyup="filterFunction()"
             />
-            <a href="index1.html" id="notactive" class="activenow nav-link py-2 text-capitalize  text-decoration-none " >1. hello world</a>
+            <a href="index1.html" id="notactive" class="notactive nav-link py-2 text-capitalize  text-decoration-none " >1. hello world</a>
         
-            <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
+            <a href="index2.html" id="activenow" class="activenow nav-link py-2  text-decoration-none">2. sum of two number</a>
           <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
           <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
           <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
@@ -337,7 +337,7 @@
     
         <a href="index1.html" id="notactive" class="activenow nav-link py-2  text-decoration-none " >1. hello world</a>
         
-        <a href="index2.html" id="notactive" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
+        <a href="index2.html" id="activenow" class="notactive nav-link py-2  text-decoration-none">2. sum of two number</a>
       <a href="index3.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >3. product</a>
       <a href="index4.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >4. airthametic operation</a>
       <a href="index5.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >5. average</a>
@@ -382,26 +382,27 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Sum of two numbers </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
-
-The code simply prints the message "hello world" when the program is executed.
+    The code is trying to find the sum of two numbers.
+ The first number is 12 and the second number is 12.
+ The code then prints out "The sum of number is" followed by whatever value was found in the variable sum, which would be 13.
+ The code will print "The sum of number is 36".
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index1.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index3.html">
     Next
   </a>
   </button>
@@ -423,15 +424,20 @@ The code simply prints the message "hello world" when the program is executed.
               <div class="terminal-container " >
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
+    /**
+    * The Java2 class calculates the sum of two numbers and prints the result.
+    */
+   public class Java2{
+       public static void main(String[] args) {
+           int num1 = 12;
+           int num2 = 12;
+           //printing theri sum
+           int sum = num1 + num2;
+           System.out.println("The sum of number is "+sum );
+       }
+   }
                   
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+  
                 
                   </code>
                 </pre>
@@ -448,10 +454,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index1.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index3.html">
           Next
         </a>
         </button>

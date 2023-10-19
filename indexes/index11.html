@@ -103,7 +103,7 @@
       <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
       <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
       <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
-      <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
+      <a href="index11.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
       <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
       <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
       <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
@@ -203,7 +203,7 @@
           <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
           <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
           <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
-          <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
+          <a href="index11.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
           <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
           <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
           <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
@@ -346,7 +346,7 @@
       <a href="index8.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >8. binary to decimal</a>
       <a href="index9.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >9. java installed</a>
       <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
-      <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
+      <a href="index11.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
       <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
       <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
       <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
@@ -382,26 +382,33 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">Compare </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
+    
 
-The code simply prints the message "hello world" when the program is executed.
+The code is a Java program that asks the user to enter two integers.
+The code then compares the two numbers and prints out if they are equal, greater than, or less than each other.
+The code is meant to be used as a Java program that will compare two integers and print out the result of the comparison.
+The code starts by instantiating a Scanner object, which allows for inputting text into a computer program.
+The next line in the code asks for the user to enter their desired value of "a".
+Next, it prints out "enter the value of b" and then receives that value from the user via input.
+Finally, it compares "a" with "b", and prints out either "a is equal to b" or "a is greater than b."
+
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index10.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index12.html">
     Next
   </a>
   </button>
@@ -423,15 +430,37 @@ The code simply prints the message "hello world" when the program is executed.
               <div class="terminal-container " >
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
-                  
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+    * The Java11 class compares two integers and prints whether they are equal, or which one is greater.
+    */
+   import java.util.Scanner;
+   
+   public class Java11 {
+       public static void compare(int a, int b){
+           if(a==b){
+               System.out.println(" a is equal to b "+a+" "+b );
+               }
+               else if(a>b){
+                   System.out.println("a is grater than b "+a+" "+b);
+               }
+               else if(b>a){
+                   System.out.println(" b is grater than a "+a+" "+b);
+               }
+       }
+       public static void main(String[] args) {
+           Scanner s = new Scanner(System.in);
+         System.out.println("enter the value of a");
+         int a = s.nextInt();
+         System.out.println("enter the value of b");
+         int b = s.nextInt();
+         compare(a, b);
+           
+       }
+   }
+   
+   
+              
+
                 
                   </code>
                 </pre>
@@ -448,10 +477,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index10.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index12.html">
           Next
         </a>
         </button>

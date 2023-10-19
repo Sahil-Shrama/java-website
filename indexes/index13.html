@@ -105,7 +105,7 @@
       <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
       <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
       <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
-      <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
+      <a href="index13.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
       <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
       <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
       <a href="index16.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >16. odd number 1-20</a>
@@ -205,7 +205,7 @@
           <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
           <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
           <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
-          <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
+          <a href="index13.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
           <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
           <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
           <a href="index16.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >16. odd number 1-20</a>
@@ -348,7 +348,7 @@
       <a href="index10.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >10. sum of digit</a>
       <a href="index11.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >11. compare two number</a>
       <a href="index12.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >12. count</a>
-      <a href="index13.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
+      <a href="index13.html" id="activenow" class="notactive nav-link py-2  text-decoration-none " >13 ascii</a>
       <a href="index14.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >14. n+n*n+n*n*n</a>
       <a href="index15.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >15. system time</a>
       <a href="index16.html" id="notactive" class="notactive nav-link py-2  text-decoration-none " >16. odd number 1-20</a>
@@ -382,26 +382,29 @@
 
 <!-- terminal -->
 <div class="container">
-  <h2 class="fw-bolder">Hello world  </h2>
+  <h2 class="fw-bolder">ASCII value  </h2>
 </div>
 
       <div  class="border-5 border-start border-primary bg-warning">
         
    <p class="pt-3 ">
     <i class="fas fa-quote-left fa-3x"></i>
-    The given code defines a class named "Java1". Inside the class, there is a main method, which is the entry point of the Java program. In the main method, the code uses the System.out.println() statement to display the text "hello world" on the console.
-
-The code simply prints the message "hello world" when the program is executed.
+    The code asks the user to enter a character for an Assic value.
+The code then uses a Scanner object to read from the keyboard and converts it into a char variable.
+The code then assigns this char variable to be equal to the first character of input, which is ch.
+Then, using an int variable called a, the program calculates what would be equivalent in decimal form if you were multiplying by 1000000 (a=10000).
+The program prints out "assic value is 10000".
+The code is used to input a character and assign it an integer value.
 <i class="fas fa-quote-right"></i>   
 </p>
 </div>
 
 
 <div class=" container  border-0 btn-group justify-content-between">
-  <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index12.html">
     Previous
   </a></button>
-  <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+  <button class=" copy-button "><a class="text-decoration-none" href="index14.html">
     Next
   </a>
   </button>
@@ -423,15 +426,20 @@ The code simply prints the message "hello world" when the program is executed.
               <div class="terminal-container " >
                 <pre  class="language-java line-numbers " style="height: 65vh;" >
  <code class="language-java line-numbers">
-                  
-   /**
-   * The Java1 class prints "hello world" to the console.
-  */
-  public class Java1{
-                     public static void main(String[] args) {
-                         System.out.println("hello world");
-                     }
-                 }
+    /**
+    * This Java program takes a character input from the user and prints its ASCII value.
+    */
+   import java.util.Scanner;
+   public class Java13 {
+       public static void main(String[] args) {
+           System.out.println("Enter characte rfor Assic value ");
+           Scanner foo = new Scanner(System.in);
+           char ch = foo.next().charAt(0);
+           int a = ch;
+           System.out.println("assic value is "+a);
+           
+       }
+   }           
                 
                   </code>
                 </pre>
@@ -448,10 +456,10 @@ The code simply prints the message "hello world" when the program is executed.
               </script>
         </div>
         <div class=" container border-0 btn btn-group justify-content-between">
-        <button class=" copy-button "><a class="text-decoration-none" href="index.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index12.html">
           Previous
         </a></button>
-        <button class=" copy-button "><a class="text-decoration-none" href="index2.html">
+        <button class=" copy-button "><a class="text-decoration-none" href="index14.html">
           Next
         </a>
         </button>
