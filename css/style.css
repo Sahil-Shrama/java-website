@@ -19,7 +19,6 @@ html,body{
   background: #151515 url("../Images/intro-bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
 }
 
 .header::after {
@@ -103,19 +102,11 @@ html,body{
   overflow: auto;
 }
 
-@media (min-width: 770px) {
+@media (max-width: 77px) {
   .header .social i {
-    display: flex;
-    font-size: 108px;
-    color: white;
-    gap: 30px;
-    margin-bottom: 25px;
-    
-  }
-  .header p{
-    font-size: 34px;
+    font-size: 30px;
   }
   .header .role {
-    font-size: 28px !important;
+    font-size: 18px !important;
   }
 }
